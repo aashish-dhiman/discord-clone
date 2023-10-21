@@ -72,7 +72,7 @@ const MiniNavbar = () => {
                                     );
                                 })}
                             </ul>
-                            <div className="">
+                            <div className="absolute bottom-10 left-2 w-full">
                                 <a
                                     href="https://discordapp.page.link/?link=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fdiscord-chat-for-games%2Fid985746746%3Ffingerprint%3D1165395575823413372.cHT-wuYpWUxRFm-AZTuqxJm1o-g%26attemptId%3D519d33fe-55f1-49c0-868f-41eb50a63867&utm_source=download&apn=com.discord&isi=985746746&ibi=com.hammerandchisel.discord&sd=Your%20place%20to%20talk%20with%20communities%20and%20friends.&efr=1"
                                     className="absolute bottom-10 left-7 w-fit bg-bgBlue text-white py-3 px-8 rounded-[40px] text-[14px] hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] transition duration-200 hover:ease-in-out"
