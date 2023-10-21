@@ -8,20 +8,6 @@ import black_logo from "../../assets/logo/black_logo.svg";
 
 const MiniNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    useEffect(() => {
-        if (isOpen) {
-            // When the menu is open, disable scrolling on the body
-            document.body.style.overflow = "hidden";
-        } else {
-            // When the menu is closed, allow scrolling on the body
-            document.body.style.overflow = "visible";
-        }
-
-        // Clean up the effect
-        return () => {
-            document.body.style.overflow = "visible";
-        };
-    }, [isOpen]);
 
     return (
         <nav>
