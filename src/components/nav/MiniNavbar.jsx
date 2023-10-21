@@ -34,7 +34,12 @@ const MiniNavbar = () => {
                     <div className="absolute top-0 left-0 flex flex-col items-end w-full min-h-screen overflow-scroll">
                         <div className="w-[350px] relative bg-white min-h-screen rounded-xl z-30 p-8 overflow-scroll">
                             <div className="flex items-center justify-between">
-                                <Link to="/">
+                                <Link
+                                    to="/"
+                                    onClick={() => {
+                                        setIsOpen(!isOpen);
+                                    }}
+                                >
                                     <img
                                         src={black_logo}
                                         alt="logo"
@@ -66,6 +71,9 @@ const MiniNavbar = () => {
                                                     ? "text-bgBlue text-[15px] underline p-3"
                                                     : ""
                                             }
+                                            onClick={() => {
+                                                setIsOpen(!isOpen);
+                                            }}
                                         >
                                             {item}
                                         </NavLink>
