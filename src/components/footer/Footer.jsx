@@ -1,4 +1,3 @@
-import React from "react";
 import { Company, Product, Resources, Policies } from "../../constants/Footer";
 import { Link } from "react-router-dom";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -6,28 +5,8 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
-import Box from "@mui/material/Box";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
-import { makeStyles } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-    select: {
-        color: "white", // Set the text color to white
-        "& .MuiSelect-icon": {
-            color: "white", // Set the arrow color to white
-        },
-    },
-}));
 
 const Footer = () => {
-    const [age, setAge] = React.useState("English");
-    const classes = useStyles();
-
-    const handleChange = (event) => {
-        setAge(event.target.value);
-    };
     return (
         <footer>
             <div className="bg-bgBlack w-full flex flex-col items-center justify-between px-10 py-10 text-bgWhite">
@@ -35,34 +14,20 @@ const Footer = () => {
                 <div className="flex flex-col sm:flex-row gap-5 w-full py-16 ">
                     <div className="sm:w-[350px]">
                         <div className="mt-6">
-                            <Box sx={{ width: 150 }}>
-                                <FormControl variant="standard" fullWidth>
-                                    <Select
-                                        id="demo-simple-select"
-                                        value={age}
-                                        label="Age"
-                                        onChange={handleChange}
-                                        style={{
-                                            color: "white",
-                                            backgroundColor: "transparent",
-                                        }}
-                                        className={classes.select}
-                                    >
-                                        <MenuItem value={"English"}>
-                                            English, US
-                                        </MenuItem>
-                                        <MenuItem value={"Arabic"}>
-                                            Arabic
-                                        </MenuItem>
-                                        <MenuItem value={"Hindi"}>
-                                            Hindi
-                                        </MenuItem>
-                                        <MenuItem value={"Romana"}>
-                                            Romana
-                                        </MenuItem>
-                                    </Select>
-                                </FormControl>
-                            </Box>
+                            <div>
+                                <select
+                                    id="language"
+                                    className="bg-transparent text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[150px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                >
+                                    <option selected value="English">
+                                        English, USA
+                                    </option>
+                                    <option value="Hindi">Hindi</option>
+                                    <option value="Arabic">Arabic</option>
+                                    <option value="Romania">Romania</option>
+                                </select>
+                            </div>
+
                             <ul className="flex items-center gap-5 mt-10">
                                 <li>
                                     <a href="https://twitter.com/discord">
