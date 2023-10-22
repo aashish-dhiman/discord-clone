@@ -9,7 +9,7 @@ import MusicNoteIcon from "@mui/icons-material/MusicNote";
 const Footer = () => {
     return (
         <footer>
-            <div className="bg-bgBlack w-full flex flex-col items-center justify-between px-10 py-10 text-bgWhite">
+            <div className="bg-bgBlack w-full flex flex-col items-center justify-between px-4 sm:px-10 py-10 text-bgWhite">
                 {/* top */}
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 w-full py-16 ">
                     <div className="sm:w-[350px]">
