@@ -13,18 +13,19 @@ const Navbar = () => {
                     />
                 </Link>
                 <div>
-                    <NavLink className="flex items-center gap-10">
+                    <ul className="flex items-center gap-10">
                         {MenuItems.map((item, i) => {
                             return (
-                                <Link
+                                <NavLink
                                     key={i}
+                                    to={`/${item.toLowerCase()}`}
                                     className="text-white text-[15px] hover:underline "
                                 >
                                     {item}
-                                </Link>
+                                </NavLink>
                             );
                         })}
-                    </NavLink>
+                    </ul>
                 </div>
                 <div className="w-[130px] flex justify-end">
                     <Link

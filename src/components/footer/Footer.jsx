@@ -11,10 +11,10 @@ const Footer = () => {
         <footer>
             <div className="bg-bgBlack w-full flex flex-col items-center justify-between px-10 py-10 text-bgWhite">
                 {/* top */}
-                <div className="flex flex-col sm:flex-row gap-5 w-full py-16 ">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 w-full py-16 ">
                     <div className="sm:w-[350px]">
                         <div className="mt-6">
-                            <div>
+                            <div className="mx-6 sm:m-0 ">
                                 <select
                                     id="language"
                                     className="bg-transparent text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[150px] p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -58,9 +58,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="flex-grow items-center mt-10 sm:mt-0 ">
-                        <div className="px-4 pb-5 flex flex-row flex-wrap gap-10 items-start justify-center sm:justify-between ">
+                        <div className="px-4 pb-5 flex flex-row flex-wrap items-start gap-y-6 justify-between ">
                             {/* Product */}
-                            <div className="w-[150px]">
+                            <div className="w-[120px] sm:w-[150px]">
                                 <h5 className="text-bgBlue ">Product</h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Product.map(({ name, link }, i) => {
@@ -68,7 +68,7 @@ const Footer = () => {
                                             <Link
                                                 key={i}
                                                 to={link}
-                                                className="hover:underline"
+                                                className="hover:underline text-[14px] sm:text-[16px]"
                                             >
                                                 {name}
                                             </Link>
@@ -77,7 +77,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             {/* Company */}
-                            <div className="w-[150px]">
+                            <div className="w-[120px] sm:w-[150px]">
                                 <h5 className="text-bgBlue ">Company</h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Company.map(({ name, link }, i) => {
@@ -85,7 +85,7 @@ const Footer = () => {
                                             <Link
                                                 key={i}
                                                 to={link}
-                                                className="hover:underline"
+                                                className="hover:underline text-[14px] sm:text-[16px]"
                                             >
                                                 {name}
                                             </Link>
@@ -94,7 +94,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             {/* Resources */}
-                            <div className="w-[150px]">
+                            <div className="w-[120px] sm:w-[150px]">
                                 <h5 className="text-bgBlue ">Resources</h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Resources.map(({ name, link }, i) => {
@@ -102,7 +102,7 @@ const Footer = () => {
                                             <Link
                                                 key={i}
                                                 to={link}
-                                                className="hover:underline"
+                                                className="hover:underline text-[14px] sm:text-[16px]"
                                             >
                                                 {name}
                                             </Link>
@@ -111,7 +111,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             {/* Policies */}
-                            <div className="w-[150px]">
+                            <div className="w-[120px] sm:w-[150px]">
                                 <h5 className="text-bgBlue ">Policies</h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Policies.map(({ name, link }, i) => {
@@ -119,7 +119,7 @@ const Footer = () => {
                                             <Link
                                                 key={i}
                                                 to={link}
-                                                className="hover:underline"
+                                                className="hover:underline text-[14px] sm:text-[16px]"
                                             >
                                                 {name}
                                             </Link>
