@@ -9,6 +9,8 @@ export default {
         extend: {
             colors: {
                 bgBlue: "#404eed",
+                bgHover: "#5865f2",
+                bgWhite: "#f6f6f6",
                 bgBlack: "#23272a",
                 btnDark: "#23272a",
             },
