@@ -42,7 +42,7 @@ const MiniNavbar = () => {
                         }}
                     >
                         <div className="w-[320px] relative bg-white min-h-screen rounded-xl z-30 p-8 overflow-scroll">
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between py-6 border-b-2">
                                 <Link
                                     to="/"
                                     onClick={() => {
@@ -64,7 +64,7 @@ const MiniNavbar = () => {
                                     <CloseIcon />
                                 </span>
                             </div>
-                            <ul className="flex flex-col items-start gap-6 mt-16">
+                            <ul className="flex flex-col items-start gap-6 mt-14">
                                 {MenuItems.map((item, i) => {
                                     return (
                                         <NavLink
