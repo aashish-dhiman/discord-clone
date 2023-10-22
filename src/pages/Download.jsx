@@ -16,7 +16,7 @@ const Download = () => {
     return (
         <>
             <MetaData title="Download Discord to Talk, Chat and Hang Out" />
-            <section className="bg-bgBlack relative overflow-hidden">
+            <section className="bg-bgBlack relative ">
                 <SelectNav />
 
                 <div className="flex flex-col md:flex-row items-center justify-between text-bgWhite md:px-10 py-16 sm:py-[100px]">

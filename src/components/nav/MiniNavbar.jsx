@@ -75,10 +75,10 @@ const MiniNavbar = () => {
                                                 isPending,
                                             }) =>
                                                 isPending
-                                                    ? "text-btnDark text-[15px] hover:underline p-3"
+                                                    ? "text-btnDark text-[15px] hover:underline"
                                                     : isActive
-                                                    ? "text-bgBlue text-[15px] underline p-3"
-                                                    : ""
+                                                    ? "text-bgBlue text-[16px] "
+                                                    : "text-btnDark text-[15px] hover:underline"
                                             }
                                             onClick={() => {
                                                 setIsOpen(!isOpen);
