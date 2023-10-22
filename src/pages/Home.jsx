@@ -1,5 +1,3 @@
-import Navbar from "../components/nav/Navbar";
-import MiniNavbar from "../components/nav/MiniNavbar";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
@@ -10,33 +8,33 @@ import card3 from "../assets/home/card3.svg";
 import card2 from "../assets/home/card2.svg";
 import card4 from "../assets/home/card4.svg";
 import stars from "../assets/home/stars.svg";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import SelectNav from "../components/nav/SelectNav";
+import MetaData from "../SEO/MetaData";
 
 const Home = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [inputOpen, setInputOpen] = useState(false);
+    const [userName, setUserName] = useState();
 
-    useEffect(() => {
-        function handleResize() {
-            setWindowWidth(window.innerWidth);
-            // console.log(window.innerWidth);
-        }
-
-        //  event listener to update windowWidth when the window is resized
-        window.addEventListener("resize", handleResize);
-
-        // Remove the event listener when the component unmounts
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+    const handleForm = (e) => {
+        e.preventDefault();
+        setInputOpen(!inputOpen);
+        setUserName("");
+    };
 
     return (
         <>
+            <MetaData title="Discord | Your Place to Talk and Hang Out" />
             {/* section 1- HERO SECTION */}
             <section className="bg-bgBlue relative overflow-hidden">
-                {windowWidth >= 1024 ? <Navbar /> : <MiniNavbar />}
+                <SelectNav />
 
                 <div className="grid grid-cols-10 grid-rows-5 text-left lg:text-center py-3">
-                    <div className="col-start-2 col-end-10 lg:col-start-3 lg:col-end-9 row-start-1 row-end-4 lg:row-start-2 lg:row-end-5 text-white z-10 mt-14 lg:mt-0">
+                    <div
+                        className={`col-start-2 col-end-10 lg:col-start-3 lg:col-end-9 row-start-1 row-end-4 lg:row-start-2 lg:row-end-5 text-white z-10 mt-14 ${
+                            inputOpen ? "lg:-mt-6" : "lg:mt-1"
+                        }`}
+                    >
                         <h1 className="uppercase text-[24px] sm:text-[34px] md:text-[60px] fontAnton font-[800] tracking-widest mb-5 ">
                             imagine a place...
                         </h1>
@@ -47,18 +45,68 @@ const Home = () => {
                             place that makes it easy to talk every day and hang
                             out more often.
                         </p>
-                        <div className="mt-8 flex flex-col sm:flex-row lg:items-center gap-5 text-[14px] md:text-[16px] justify-center ">
-                            <Link
-                                to="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"
-                                className="flex items-center justify-between gap-2 text-btnDark bg-white rounded-[40px] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:text-bgBlue transition duration-200 hover:ease-in-out"
-                            >
-                                <FileDownloadOutlinedIcon /> Download for
-                                Windows
-                            </Link>
-                            <Link className="text-white bg-btnDark rounded-[40px] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] transition duration-200 hover:ease-in-out">
-                                Open Discord in your browser
-                            </Link>
-                        </div>
+                        {!inputOpen && (
+                            <div className="mt-8 flex flex-col sm:flex-row lg:items-center gap-5 text-[14px] md:text-[16px] justify-center ">
+                                <Link
+                                    to="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"
+                                    className="flex items-center justify-between gap-2 text-btnDark bg-white rounded-[40px] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:text-bgBlue transition duration-200 hover:ease-in-out"
+                                >
+                                    <FileDownloadOutlinedIcon /> Download for
+                                    Windows
+                                </Link>
+                                <button
+                                    onClick={() => {
+                                        setInputOpen(!inputOpen);
+                                    }}
+                                    className="text-white bg-btnDark rounded-[40px] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] transition duration-200 hover:ease-in-out"
+                                >
+                                    Open Discord in your browser
+                                </button>
+                            </div>
+                        )}
+                        {inputOpen && (
+                            <div className="mt-6 flex flex-col lg:items-center gap-5 text-[14px] md:text-[16px] justify-center ">
+                                <form onSubmit={handleForm}>
+                                    <div className="px-5 py-2 bg-white sm:w-[380px] rounded-[40px] flex items-center justify-between gap-5">
+                                        <input
+                                            type="text"
+                                            id="username"
+                                            name="username"
+                                            value={userName}
+                                            onChange={(e) =>
+                                                setUserName(e.target.value)
+                                            }
+                                            required
+                                            placeholder="Enter a display name"
+                                            className="w-full outline-none text-bgBlack font-[300]"
+                                        />
+                                        <button
+                                            type="submit"
+                                            className="bg-bgBlue -mr-2 hover:bg-bgHover rounded-[40px] text-bgWhite px-5 py-2"
+                                        >
+                                            <ArrowForwardIcon />
+                                        </button>
+                                    </div>
+                                </form>
+                                <p className="text-[12px] font-[300]">
+                                    By registering, you agree to Discord's{" "}
+                                    <a
+                                        href="https://discord.com/terms"
+                                        className="underline "
+                                    >
+                                        Terms of Service
+                                    </a>{" "}
+                                    and{" "}
+                                    <a
+                                        href="https://discord.com/privacy"
+                                        className="underline "
+                                    >
+                                        Privacy Policy
+                                    </a>
+                                    .
+                                </p>
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="">
@@ -152,11 +200,11 @@ const Home = () => {
                             session with screen share.
                         </p>
                     </div>
-                    <div className="mt-10">
+                    <div className="mt-10 overflow">
                         <img
                             src={card3}
                             alt="card"
-                            className="lg:scale-[1.3]"
+                            className="lg:scale-[1.3] "
                         />
                     </div>
                     <div className="relative mt-10 md:mt-20 w-full">

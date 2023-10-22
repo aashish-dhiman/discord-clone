@@ -12,6 +12,7 @@ export default {
                 bgHover: "#5865f2",
                 bgWhite: "#f6f6f6",
                 bgBlack: "#23272a",
+                bgGrey: "#2c2f33",
                 btnDark: "#23272a",
             },
         },
