@@ -57,7 +57,7 @@ const Download = () => {
             <section className="py-20">
                 <div className="flex flex-col gap-16 md:grid grid-cols-2 grid-rows-[156px,auto,156px,auto,156px] px-10 w-full">
                     <div className="col-span-1 row-span-2 flex items-center flex-col gap-20 bg-bgWhite lg:w-[550px] md:p-16 rounded-[20px] overflow-hidden">
-                        <div className="flex flex-col gap-6 items-center w-full">
+                        <div className="flex flex-col gap-6 py-4 md:p-0 items-center w-full">
                             <span className="text-[30px] font-[600]">iOS</span>
                             <Link
                                 to="https://discordapp.page.link/?link=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fdiscord-chat-for-games%2Fid985746746%3Ffingerprint%3D1165533823983951904.-Uc49CjCH3u5B6LE%26attemptId%3D5d56e76a-6098-466c-937c-e942c021de87&utm_source=download&apn=com.discord&isi=985746746&ibi=com.hammerandchisel.discord&sd=Your%20place%20to%20talk%20with%20communities%20and%20friends.&efr=1"
@@ -70,7 +70,7 @@ const Download = () => {
                             <img src={svg2} alt="svg" className="" />
                         </div>
                     </div>
-                    <div className="col-start-2 row-start-2 row-span-2 flex items-center flex-col gap-20 bg-bgWhite lg:w-[550px] md:p-16 rounded-[20px] overflow-hidden">
+                    <div className="col-start-2 row-start-2 row-span-2 flex items-center flex-col gap-20 bg-bgWhite lg:w-[550px] py-4 md:p-16 rounded-[20px] overflow-hidden">
                         <div className="flex flex-col gap-6 items-center w-full">
                             <span className="text-[30px] font-[600]">
                                 Android
@@ -86,7 +86,7 @@ const Download = () => {
                             <img src={svg3} alt="svg" className="" />
                         </div>
                     </div>
-                    <div className="col-span-1 row-span-2 mt-10 flex items-center flex-col gap-20 bg-bgWhite lg:w-[550px] md:p-16 rounded-[20px] overflow-hidden">
+                    <div className="col-span-1 row-span-2 mt-10 flex items-center flex-col gap-20 bg-bgWhite lg:w-[550px] py-4 md:p-16 rounded-[20px] overflow-hidden">
                         <div className="flex flex-col gap-6 items-center w-full">
                             <span className="text-[30px] font-[600]">
                                 Linux
@@ -102,7 +102,7 @@ const Download = () => {
                             <img src={svg4} alt="svg" className="" />
                         </div>
                     </div>
-                    <div className="col-span-1 row-span-2 flex items-center mt-20 flex-col gap-20 bg-bgWhite lg:w-[550px] md:p-16 rounded-[20px] overflow-hidden">
+                    <div className="col-span-1 row-span-2 flex items-center mt-20 flex-col gap-20 bg-bgWhite lg:w-[550px] py-4 md:p-16 rounded-[20px] overflow-hidden">
                         <div className="flex flex-col gap-6 items-center w-full">
                             <span className="text-[30px] font-[600]">Mac</span>
                             <Link
@@ -116,7 +116,7 @@ const Download = () => {
                             <img src={svg5} alt="svg" className="" />
                         </div>
                     </div>
-                    <div className="col-span-1 row-span-2 flex items-center mt-20 flex-col gap-20 bg-bgWhite lg:w-[550px] md:p-10 ">
+                    <div className="col-span-1 row-span-2 flex items-center mt-20 flex-col gap-20 bg-bgWhite lg:w-[550px] p-4 md:p-10 ">
                         <div className="flex flex-col gap-6 items-start w-full">
                             <span className="text-[30px] font-[800]">
                                 Feeling experimental?
