@@ -157,7 +157,7 @@ const Nitro = () => {
             </section>
 
             {/* section FAQ */}
-            <section className="w-full py-10 md:py-16 px-2 md:px-16 ">
+            <section className="w-full pb-10 md:py-16 px-2 md:px-16 ">
                 <FAQ />
             </section>
 
@@ -165,8 +165,8 @@ const Nitro = () => {
             <section className="w-full relative py-[100px] md:py-[130px] px-2 md:px-16 mx-auto bg-gradient-to-br from-[#8547c6] via-[#b749ba] to-[#ac5a90]   ">
                 <img src={card12} alt="" className="hidden lg:block absolute left-0 top-0"/>
                 <img src={card11} alt="" className="hidden lg:block absolute right-0 top-0"/>
-                <img src={star2} alt="" className="lg:hidden block absolute left-0 top-5"/>
-                <img src={star2} alt="" className="lg:hidden block absolute right-0 top-5 rotate-180"/>
+                <img src={star2} alt="" className="lg:hidden block absolute left-1 top-5"/>
+                <img src={star2} alt="" className="lg:hidden block absolute right-1 top-5 rotate-180"/>
                 <div className="flex flex-col gap-8 items-center">
                     <h3 className="text-bgWhite text-[26px] md:text-[42px] font-[700]">
                         Unleash the fun with Nitro

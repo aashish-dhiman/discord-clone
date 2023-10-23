@@ -27,7 +27,7 @@ const FAQ = () => {
             <div className="mt-10">
                 {/* tabs */}
                 <div className="flex items-center justify-center my-8 md:mt-16">
-                    <ul className="flex flex-wrap gap-6 items-center justify-center text-[16px] font-[500] text-gray-500">
+                    <ul className="flex flex-wrap gap-6 items-center justify-center px-10 text-[16px] font-[500] text-gray-500">
                         <li
                             className={`cursor-pointer py-2 ${
                                 activeTab === 1 &&
