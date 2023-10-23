@@ -61,7 +61,9 @@ const Footer = () => {
                         <div className="px-4 pb-5 flex flex-row flex-wrap items-start gap-y-6 justify-between ">
                             {/* Product */}
                             <div className="w-[120px] sm:w-[150px]">
-                                <h5 className="text-bgBlue ">Product</h5>
+                                <h5 className="text-bgBlue font-[600] ">
+                                    Product
+                                </h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Product.map(({ name, link }, i) => {
                                         return (
@@ -78,7 +80,9 @@ const Footer = () => {
                             </div>
                             {/* Company */}
                             <div className="w-[120px] sm:w-[150px]">
-                                <h5 className="text-bgBlue ">Company</h5>
+                                <h5 className="text-bgBlue font-[600]">
+                                    Company
+                                </h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Company.map(({ name, link }, i) => {
                                         return (
@@ -95,7 +99,9 @@ const Footer = () => {
                             </div>
                             {/* Resources */}
                             <div className="w-[120px] sm:w-[150px]">
-                                <h5 className="text-bgBlue ">Resources</h5>
+                                <h5 className="text-bgBlue font-[600] ">
+                                    Resources
+                                </h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Resources.map(({ name, link }, i) => {
                                         return (
@@ -112,7 +118,9 @@ const Footer = () => {
                             </div>
                             {/* Policies */}
                             <div className="w-[120px] sm:w-[150px]">
-                                <h5 className="text-bgBlue ">Policies</h5>
+                                <h5 className="text-bgBlue font-[600]">
+                                    Policies
+                                </h5>
                                 <ul className="flex flex-col gap-3 font-[400] mt-8">
                                     {Policies.map(({ name, link }, i) => {
                                         return (
@@ -141,8 +149,8 @@ const Footer = () => {
                             />
                         </Link>
                         <Link
-                            to="/register"
-                            className="text-[14px] text-white bg-bgBlue rounded-[40px] px-4 py-3 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgHover transition duration-200 hover:ease-in-out"
+                            to="https://discord.com/register"
+                            className="text-[14px] font-[600] text-white bg-bgBlue rounded-[40px] px-4 py-3 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgHover transition duration-200 hover:ease-in-out"
                         >
                             Sign up
                         </Link>

@@ -14,6 +14,10 @@ export default {
                 bgBlack: "#23272a",
                 bgGrey: "#2c2f33",
                 btnDark: "#23272a",
+                bgBorder: "#b845c1",
+            },
+            boxShadow: {
+                hooverShadow: "0px 6px 12px 2px rgba(0,0,0,0.3)",
             },
         },
     },

@@ -49,7 +49,7 @@ const Home = () => {
                             <div className="mt-8 flex flex-col sm:flex-row lg:items-center gap-5 text-[14px] md:text-[16px] justify-center ">
                                 <Link
                                     to="https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86"
-                                    className="flex items-center justify-between gap-2 text-btnDark bg-white rounded-[40px] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:text-bgBlue transition duration-200 hover:ease-in-out"
+                                    className="flex items-center justify-between gap-2 text-btnDark font-[500] bg-white rounded-[40px] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:text-bgBlue transition duration-200 hover:ease-in-out"
                                 >
                                     <FileDownloadOutlinedIcon /> Download for
                                     Windows
@@ -58,7 +58,7 @@ const Home = () => {
                                     onClick={() => {
                                         setInputOpen(!inputOpen);
                                     }}
-                                    className="text-white bg-btnDark rounded-[40px] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] transition duration-200 hover:ease-in-out"
+                                    className="text-white bg-btnDark rounded-[40px] font-[600] px-10 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] transition duration-200 hover:ease-in-out"
                                 >
                                     Open Discord in your browser
                                 </button>
@@ -138,7 +138,7 @@ const Home = () => {
                         <h2 className="text-[24px] md:text-[42px] fontAnton md:leading-[56px]  text-bgBlack">
                             Create an invite-only place where you belong
                         </h2>
-                        <p className="text-bgBlack md:leading-9 mt-4 font-[400] tracking-wide">
+                        <p className="text-bgBlack md:leading-8 mt-4 text-[18px] font-[400] tracking-wide">
                             Discord servers are organized into topic-based
                             channels where you can collaborate, share, and just
                             talk about your day without clogging up a group
@@ -155,7 +155,7 @@ const Home = () => {
                         <h2 className="text-[24px] md:text-[42px] fontAnton md:leading-[56px]  text-bgBlack">
                             Where hanging out is easy
                         </h2>
-                        <p className="text-bgBlack md:leading-9 mt-4 font-[400] tracking-wide">
+                        <p className="text-bgBlack md:leading-8 mt-4 text-[18px] font-[400] tracking-wide">
                             Grab a seat in a voice channel when you’re free.
                             Friends in your server can see you’re around and
                             instantly pop in to talk without having to call.
@@ -177,7 +177,7 @@ const Home = () => {
                         <h2 className="text-[24px] md:text-[42px] fontAnton md:leading-[56px]  text-bgBlack">
                             From few to a fandom
                         </h2>
-                        <p className="text-bgBlack md:leading-9 mt-4 font-[400] tracking-wide">
+                        <p className="text-bgBlack md:leading-8 mt-4 text-[18px] font-[400] tracking-wide">
                             Get any community running with moderation tools and
                             custom member access. Give members special powers,
                             set up private channels, and more.
@@ -193,7 +193,7 @@ const Home = () => {
                         <h2 className="text-[20px] md:text-[44px] text-center tracking-wider fontAnton md:leading-[56px]  text-bgBlack">
                             RELIABLE TECH FOR STAYING CLOSE
                         </h2>
-                        <p className="text-bgBlack md:leading-9 mt-4 text-md text-center tracking-wide">
+                        <p className="text-bgBlack md:leading-8 text-[18px] mt-4 text-md text-center tracking-wide">
                             Low-latency voice and video feels like you’re in the
                             same room. Wave hello over video, watch friends
                             stream their games, or gather up and have a drawing

@@ -61,7 +61,7 @@ const Download = () => {
                             <span className="text-[30px] font-[600]">iOS</span>
                             <Link
                                 to="https://discordapp.page.link/?link=https%3A%2F%2Fitunes.apple.com%2Fus%2Fapp%2Fdiscord-chat-for-games%2Fid985746746%3Ffingerprint%3D1165533823983951904.-Uc49CjCH3u5B6LE%26attemptId%3D5d56e76a-6098-466c-937c-e942c021de87&utm_source=download&apn=com.discord&isi=985746746&ibi=com.hammerandchisel.discord&sd=Your%20place%20to%20talk%20with%20communities%20and%20friends.&efr=1"
-                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
+                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] text-[18px] font-[600] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
                             >
                                 Download
                             </Link>
@@ -77,7 +77,7 @@ const Download = () => {
                             </span>
                             <Link
                                 to="https://discordapp.page.link/?link=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.discord%26fingerprint%3D1165533823983951904.2_eqimiP1Ft-Uc49CjCH3u5B6LE%26attemptId%3D59e525b1-c5e8-4a3e-aae3-f81d411af643&utm_source=download&apn=com.discord&isi=985746746&ibi=com.hammerandchisel.discord&sd=Your%20place%20to%20talk%20with%20communities%20and%20friends.&efr=1"
-                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
+                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] text-[18px] font-[600] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
                             >
                                 Download
                             </Link>
@@ -93,7 +93,7 @@ const Download = () => {
                             </span>
                             <Link
                                 to="https://discord.com/api/download?platform=linux&format=deb"
-                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
+                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] text-[18px] font-[600] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
                             >
                                 Download
                             </Link>
@@ -107,7 +107,7 @@ const Download = () => {
                             <span className="text-[30px] font-[600]">Mac</span>
                             <Link
                                 to="https://discord.com/api/download?platform=osx"
-                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
+                                className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] text-[18px] font-[600] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
                             >
                                 Download
                             </Link>
@@ -127,7 +127,7 @@ const Download = () => {
                             </span>
                             <div className="relative">
                                 <button
-                                    className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
+                                    className="flex items-center justify-between gap-2 text-white bg-bgBlack rounded-[40px] text-[18px] font-[600] px-8 py-4 w-fit hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:bg-bgGrey transition duration-200 hover:ease-in-out"
                                     onClick={() => {
                                         setIsOpen(!isOpen);
                                     }}

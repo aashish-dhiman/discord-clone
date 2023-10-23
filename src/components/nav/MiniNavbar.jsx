@@ -59,7 +59,7 @@ const MiniNavbar = () => {
                                     onClick={() => {
                                         setIsOpen(!isOpen);
                                     }}
-                                    className="hover:scale-[1.06]"
+                                    className="hover:scale-[1.06] font-[700]"
                                 >
                                     <CloseIcon />
                                 </span>
@@ -77,8 +77,8 @@ const MiniNavbar = () => {
                                                 isPending
                                                     ? "text-btnDark text-[15px] hover:underline"
                                                     : isActive
-                                                    ? "text-bgBlue text-[16px] "
-                                                    : "text-btnDark text-[15px] hover:underline"
+                                                    ? "text-bgBlue text-[16px] font-[600]"
+                                                    : "text-btnDark text-[15px] hover:underline font-[500]"
                                             }
                                             onClick={() => {
                                                 setIsOpen(!isOpen);
