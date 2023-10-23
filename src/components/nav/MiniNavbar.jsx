@@ -24,7 +24,10 @@ const MiniNavbar = () => {
                     />
                 </Link>
                 <div className="w-[130px] flex justify-end gap-4">
-                    <Link className="bg-white text-black font-[500] w-[70px] px-3 py-2 tracking-wide text-center rounded-[40px] text-[12px] hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:text-bgBlue transition duration-200 hover:ease-in-out ">
+                    <Link
+                        to="https://discord.com/login"
+                        className="bg-white text-black font-[500] w-[70px] px-3 py-2 tracking-wide text-center rounded-[40px] text-[12px] hover:shadow-[0px_6px_12px_2px_rgba(0,0,0,0.3)] hover:text-bgBlue transition duration-200 hover:ease-in-out "
+                    >
                         Login
                     </Link>
                     <span
