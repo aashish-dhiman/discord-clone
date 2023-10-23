@@ -28,7 +28,7 @@ const GeneralTabs = ({ faq }) => {
                         } transition duration-2000 hover:ease-in-out `}
                     />
                 </div>
-                {isOpen === item.index && <p className="mt-3 pr-6">{item.answer}</p>}
+                {isOpen === item.index && <p className="mt-3 md:pr-6">{item.answer}</p>}
             </div>
         );
     });
