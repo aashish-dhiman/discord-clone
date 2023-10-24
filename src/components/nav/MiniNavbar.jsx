@@ -72,7 +72,7 @@ const MiniNavbar = () => {
                                     return (
                                         <NavLink
                                             key={i}
-                                            to={`/${item.to}`}
+                                            to={`${item.to}`}
                                             className={({
                                                 isActive,
                                                 isPending,
