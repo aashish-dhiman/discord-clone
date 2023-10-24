@@ -18,10 +18,10 @@ const Navbar = () => {
                             return (
                                 <NavLink
                                     key={i}
-                                    to={`/${item.toLowerCase()}`}
+                                    to={`${item.to}`}
                                     className="text-white text-[16px] font-[500] hover:underline "
                                 >
-                                    {item}
+                                    {item.link}
                                 </NavLink>
                             );
                         })}

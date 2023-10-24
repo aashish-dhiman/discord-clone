@@ -19,11 +19,11 @@ export const Product = [
 export const Company = [
     {
         name: "About",
-        link: "/company",
+        link: "https://discord.com/company",
     },
     {
         name: "Jobs",
-        link: "/careers",
+        link: "https://discord.com/jobs",
     },
     {
         name: "Brand",
@@ -31,7 +31,7 @@ export const Company = [
     },
     {
         name: "Newsroom",
-        link: "/newsroom",
+        link: "https://discord.com/newsroom",
     },
     {
         name: "Fall Release",
@@ -41,7 +41,7 @@ export const Company = [
 export const Resources = [
     {
         name: "College",
-        link: "/college",
+        link: "https://discord.com/college",
     },
     {
         name: "Support",
@@ -53,7 +53,7 @@ export const Resources = [
     },
     {
         name: "Blog",
-        link: "/blog",
+        link: "https://discord.com/blog",
     },
     {
         name: "Feedback",

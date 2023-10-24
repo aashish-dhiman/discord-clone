@@ -15,7 +15,7 @@ const MiniNavbar = () => {
 
     return (
         <nav>
-            <div className=" bg-transparent relative px-10 py-6 w-full flex items-center justify-between">
+            <div className=" bg-transparent relative px-6 sm:px-8 md:px-10 py-6 w-full flex items-center justify-between">
                 <Link to="/">
                     <img
                         src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0b5493894cf60b300587_full_logo_white_RGB.svg "
@@ -72,7 +72,7 @@ const MiniNavbar = () => {
                                     return (
                                         <NavLink
                                             key={i}
-                                            to={`/${item.toLowerCase()}`}
+                                            to={`/${item.to}`}
                                             className={({
                                                 isActive,
                                                 isPending,
@@ -87,7 +87,7 @@ const MiniNavbar = () => {
                                                 setIsOpen(!isOpen);
                                             }}
                                         >
-                                            {item}
+                                            {item.link}
                                         </NavLink>
                                     );
                                 })}
